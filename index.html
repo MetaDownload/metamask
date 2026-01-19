@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MetaMask(メタマスク)拡張機能をダウンロードしてウォレットを作成</title>
+
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="description" content="MetaMask(メタマスク)ウォレットのダウンロードとインストール方法を詳しく解説。初心者でも簡単に設定できる完全ガイド。MetaDownloadが提供する信頼性の高い情報。">
+  <meta name="keywords" content="MetaDownload,メタマスク,ダウンロード,ウォレット,ブロックチェーン">
+  <meta name="author" content="MetaDownload">
+  <meta name="theme-color" content="#C4550A">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="MetaMask(メタマスク)拡張機能をダウンロードしてウォレットを作成">
+  <meta property="og:description" content="MetaMask(メタマスク)ウォレットのダウンロードとインストール方法を詳しく解説。初心者でも簡単に設定できる完全ガイド。MetaDownloadが提供する信頼性の高い情報。">
+  <meta property="og:url" content="https://metadownload.github.io/metamask">
+  <meta property="og:site_name" content="MetaDownload">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://metadownload.github.io/thumbnail-1200x630.png">
+  <meta property="og:image:alt" content="MetaMask(メタマスク)ウォレットのダウンロードとインストール方法を詳しく解説。初心者でも簡単に設定できる完全ガイド。MetaDownloadが提供する信頼性の高い情報。">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-01-19T21:08:04+00:00">
+  <meta property="article:modified_time" content="2026-01-19T21:08:04+00:00">
+  <meta property="article:author" content="MetaDownload">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MetaMask(メタマスク)拡張機能をダウンロードしてウォレットを作成">
+  <meta name="twitter:description" content="MetaMask(メタマスク)ウォレットのダウンロードとインストール方法を詳しく解説。初心者でも簡単に設定できる完全ガイド。MetaDownloadが提供する信頼性の高い情報。">
+  <meta name="twitter:url" content="https://metadownload.github.io/metamask">
+  <meta name="twitter:site" content="@realmetadownload">
+  <meta name="twitter:creator" content="@realmetadownload">
+  <meta name="twitter:image" content="https://metadownload.github.io/thumbnail-1200x630.png">
+  <meta name="twitter:image:alt" content="MetaMask(メタマスク)ウォレットのダウンロードとインストール方法を詳しく解説。初心者でも簡単に設定できる完全ガイド。MetaDownloadが提供する信頼性の高い情報。">
+
+  <link rel="robots" href="/robots.txt">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="canonical" href="https://metadownload.github.io/metamask">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+
+  <link rel="icon" type="image/x-icon" href="https://metadownload.github.io/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://metadownload.github.io/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://metadownload.github.io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="https://metadownload.github.io/favicon-48x48.png">
+  <link rel="icon" type="image/svg+xml" href="https://metadownload.github.io/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://metadownload.github.io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://metadownload.github.io/android-chrome-192x192.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              900: '#0a0a0a',
+              800: '#0f0f0f',
+              700: '#171717',
+              600: '#1f1f1f',
+              500: '#262626',
+              400: '#404040',
+              300: '#525252',
+              200: '#737373',
+              100: '#a3a3a3'
+            },
+            accent: {
+              DEFAULT: '#f97316',
+              hover: '#ea580c',
+              light: '#fb923c',
+              dark: '#c2410c'
+            }
+          },
+          fontFamily: {
+            sans: ['Noto Sans JP', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #0a0a0a;
+      color: #e5e5e5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img,
+    video {
+      aspect-ratio: attr(width) / attr(height);
+    }
+
+    .hero-section {
+      contain: layout style paint;
+    }
+
+    .btn-primary {
+      touch-action: manipulation;
+      will-change: transform;
+    }
+
+    .modal-overlay {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-content {
+      transform: scale(0.95) translateY(20px);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.active .modal-content {
+      transform: scale(1) translateY(0);
+    }
+
+    [id] {
+      scroll-margin-top: 80px;
+    }
+
+    :focus-visible {
+      outline: 2px solid #f97316;
+      outline-offset: 2px;
+    }
+
+    ::selection {
+      background-color: #f97316;
+      color: #0a0a0a;
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metadownload.github.io/metamask"
+      },
+      "headline": "MetaMask(メタマスク)のダウンロードとインストール方法",
+      "description": "MetaMask(メタマスク)ウォレットのダウンロードとインストール方法を詳しく解説。初心者でも簡単に設定できる完全ガイド。",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://metadownload.github.io/thumbnail-1200x630.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "MetaDownload",
+        "url": "https://metadownload.github.io/metamask"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MetaDownload",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metadownload.github.io/logo.png",
+          "width": 200,
+          "height": 60
+        }
+      },
+      "datePublished": "2026-01-19T21:08:04+00:00",
+      "dateModified": "2026-01-19T21:08:04+00:00",
+      "inLanguage": "ja"
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MetaDownload",
+      "url": "https://metadownload.github.io/metamask",
+      "logo": "https://metadownload.github.io/logo.png",
+      "description": "MetaDownloadは暗号通貨とブロックチェーン技術に関する信頼性の高い情報を提供します。",
+      "sameAs": []
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://metadownload.github.io/metamask"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MetaMask(メタマスク)のダウンロードとインストール方法",
+          "item": "https://metadownload.github.io/metamask#article"
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "MetaMask(メタマスク)のダウンロードとインストール方法",
+      "description": "MetaMask(メタマスク)ウォレットをブラウザにダウンロードしてインストールする方法を説明します。",
+      "totalTime": "PT10M",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "JPY",
+        "value": "0"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "公式サイトにアクセス",
+          "text": "MetaMask(メタマスク)の公式ウェブサイト（metamask.io）にアクセスします。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "ダウンロードボタンをクリック",
+          "text": "ダウンロードボタンをクリックして、お使いのブラウザ用の拡張機能をダウンロードします。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "拡張機能を追加",
+          "text": "ブラウザの拡張機能ストアでMetaMask(メタマスク)を追加します。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "ウォレットを作成",
+          "text": "新しいウォレットを作成するか、既存のウォレットをインポートします。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "シードフレーズを保存",
+          "text": "12語のシードフレーズを安全な場所に保存します。"
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MetaDownload",
+      "url": "https://metadownload.github.io/metamask",
+      "description": "MetaDownloadは暗号通貨とブロックチェーン技術に関する信頼性の高い情報を提供します。",
+      "inLanguage": "ja"
+    }
+  </script>
+</head>
+<body class="bg-dark-900 text-neutral-200 min-h-screen">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent text-dark-900 px-4 py-2 rounded-lg font-medium z-50">メインコンテンツへスキップ</a>
+  <header class="fixed top-0 left-0 right-0 z-40 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600" role="banner">
+    <nav class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="メインナビゲーション">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center" aria-label="MetaDownload ホーム">
+          <span class="text-xl font-bold text-white tracking-tight">MetaDownload</span>
+        </a>
+        <div class="flex items-center gap-6">
+          <button onclick="openModal('about')" class="text-sm text-dark-100 hover:text-accent transition-colors">会社概要</button>
+          <button onclick="openModal('contact')" class="text-sm text-dark-100 hover:text-accent transition-colors hidden sm:block">お問い合わせ</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="pt-16" role="main">
+    <section class="hero-section py-16 sm:py-24 bg-dark-800" aria-labelledby="hero-title">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <nav class="mb-8" aria-label="パンくずリスト">
+          <ol class="flex items-center justify-center gap-2 text-sm text-dark-200" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="#" itemprop="item" class="hover:text-accent transition-colors">
+                <span itemprop="name">ホーム</span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li class="text-dark-400">/</li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span itemprop="name" class="text-dark-100">ガイド</span>
+              <meta itemprop="position" content="2">
+            </li>
+          </ol>
+        </nav>
+        <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">MetaMask(メタマスク)のダウンロードとインストール方法</h1>
+        <p class="text-lg sm:text-xl text-dark-100 mb-8 max-w-2xl mx-auto leading-relaxed">MetaDownloadが提供する完全ガイドで、MetaMask(メタマスク)ウォレットを簡単にセットアップしましょう。初心者の方でも安心して始められます。</p>
+        <div class="flex items-center justify-center gap-6 text-sm text-dark-200">
+          <time datetime="2026-01-19T21:08:04+00:00" class="flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+            <span>2025年1月19日</span>
+          </time>
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>読了時間: 約10分</span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <div class="w-full h-px bg-dark-600"></div>
+    <article id="article" class="py-12 sm:py-16 bg-dark-900" itemscope itemtype="https://schema.org/Article">
+      <meta itemprop="headline" content="MetaMask(メタマスク)のダウンロードとインストール方法">
+      <meta itemprop="author" content="MetaDownload">
+      <meta itemprop="datePublished" content="2026-01-19T21:08:04+00:00">
+      <meta itemprop="dateModified" content="2026-01-19T21:08:04+00:00">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section class="mb-12" aria-labelledby="intro-title">
+          <h2 id="intro-title" class="text-2xl sm:text-3xl font-bold text-white mb-6">MetaMask(メタマスク)とは</h2>
+          <div class="prose prose-lg text-dark-100 space-y-4" itemprop="articleBody">
+            <p>MetaMask(メタマスク)は、イーサリアムブロックチェーンと対話するための最も人気のあるブラウザ拡張機能ウォレットです。MetaDownloadでは、この重要なツールの安全なインストール方法をご案内します。</p>
+            <p>このウォレットを使用すると、分散型アプリケーション（dApps）へのアクセス、暗号通貨の送受信、NFTの管理など、様々な操作が可能になります。</p>
+          </div>
+        </section>
+        <section class="mb-12 p-6 sm:p-8 bg-dark-800 rounded-2xl border border-dark-600" aria-labelledby="step1-title">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center border border-accent/20">
+              <span class="text-accent font-bold text-xl">1</span>
+            </div>
+            <div class="flex-1">
+              <h3 id="step1-title" class="text-xl font-bold text-white mb-4">公式サイトにアクセス</h3>
+              <p class="text-dark-100 mb-4">まず、MetaMask(メタマスク)の公式ウェブサイトにアクセスします。フィッシングサイトに注意し、必ずURLが正しいことを確認してください。</p>
+              <div class="bg-dark-700 rounded-lg p-4 border border-dark-500">
+                <p class="text-sm text-dark-200 mb-2">公式URL:</p>
+                <p class="text-accent font-mono">https://metamask.io</p>
+              </div>
+              <div class="mt-4 p-4 bg-accent/5 rounded-lg border border-accent/20">
+                <p class="text-sm text-accent flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>MetaDownloadからのアドバイス: 検索エンジンの広告リンクではなく、直接URLを入力することをお勧めします。</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12 p-6 sm:p-8 bg-dark-800 rounded-2xl border border-dark-600" aria-labelledby="step2-title">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center border border-accent/20">
+              <span class="text-accent font-bold text-xl">2</span>
+            </div>
+            <div class="flex-1">
+              <h3 id="step2-title" class="text-xl font-bold text-white mb-4">ブラウザを選択してダウンロード</h3>
+              <p class="text-dark-100 mb-4">MetaMask(メタマスク)は複数のブラウザに対応しています。お使いのブラウザに合わせてダウンロードボタンをクリックします。</p>
+              <div class="grid grid-cols-3 sm:grid-cols-5 gap-3">
+                <div class="bg-dark-700 rounded-lg p-4 text-center border border-dark-500">
+                  <div class="w-10 h-10 mx-auto mb-2 bg-dark-600 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <p class="text-sm text-dark-100">Chrome</p>
+                </div>
+                <div class="bg-dark-700 rounded-lg p-4 text-center border border-dark-500">
+                  <div class="w-10 h-10 mx-auto mb-2 bg-dark-600 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <p class="text-sm text-dark-100">Firefox</p>
+                </div>
+                <div class="bg-dark-700 rounded-lg p-4 text-center border border-dark-500">
+                  <div class="w-10 h-10 mx-auto mb-2 bg-dark-600 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <p class="text-sm text-dark-100">Brave</p>
+                </div>
+                <div class="bg-dark-700 rounded-lg p-4 text-center border border-dark-500">
+                  <div class="w-10 h-10 mx-auto mb-2 bg-dark-600 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <p class="text-sm text-dark-100">Opera</p>
+                </div>
+                <div class="bg-dark-700 rounded-lg p-4 text-center border border-dark-500">
+                  <div class="w-10 h-10 mx-auto mb-2 bg-dark-600 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <p class="text-sm text-dark-100">Edge</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12 p-6 sm:p-8 bg-dark-800 rounded-2xl border border-dark-600" aria-labelledby="step3-title">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center border border-accent/20">
+              <span class="text-accent font-bold text-xl">3</span>
+            </div>
+            <div class="flex-1">
+              <h3 id="step3-title" class="text-xl font-bold text-white mb-4">拡張機能を追加</h3>
+              <p class="text-dark-100 mb-4">ブラウザの拡張機能ストアに移動したら、「Chromeに追加」または「Firefoxへ追加」などのボタンをクリックして、拡張機能をインストールします。</p>
+              <ul class="space-y-3 text-dark-100">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>拡張機能のアクセス許可を確認します</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>インストールが完了するまで待ちます</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>ブラウザのツールバーにキツネのアイコンが表示されます</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12 p-6 sm:p-8 bg-dark-800 rounded-2xl border border-dark-600" aria-labelledby="step4-title">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center border border-accent/20">
+              <span class="text-accent font-bold text-xl">4</span>
+            </div>
+            <div class="flex-1">
+              <h3 id="step4-title" class="text-xl font-bold text-white mb-4">新しいウォレットを作成</h3>
+              <p class="text-dark-100 mb-4">MetaMask(メタマスク)を初めて起動すると、セットアップ画面が表示されます。「新しいウォレットを作成」を選択します。</p>
+              <div class="space-y-4">
+                <div class="flex items-start gap-3 p-4 bg-dark-700 rounded-lg border border-dark-500">
+                  <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="text-accent font-bold text-sm">A</span>
+                  </div>
+                  <div>
+                    <p class="font-medium text-white mb-1">新しいウォレットを作成</p>
+                    <p class="text-sm text-dark-200">初めてMetaMask(メタマスク)を使用する場合はこちら</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-dark-700 rounded-lg border border-dark-500">
+                  <div class="w-8 h-8 bg-dark-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="text-dark-200 font-bold text-sm">B</span>
+                  </div>
+                  <div>
+                    <p class="font-medium text-dark-100 mb-1">既存のウォレットをインポート</p>
+                    <p class="text-sm text-dark-200">シードフレーズをお持ちの場合はこちら</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12 p-6 sm:p-8 bg-dark-800 rounded-2xl border border-dark-600" aria-labelledby="step5-title">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center border border-accent/20">
+              <span class="text-accent font-bold text-xl">5</span>
+            </div>
+            <div class="flex-1">
+              <h3 id="step5-title" class="text-xl font-bold text-white mb-4">パスワードを設定</h3>
+              <p class="text-dark-100 mb-4">強力なパスワードを設定します。このパスワードは、ブラウザでMetaMask(メタマスク)にアクセスする際に必要になります。</p>
+              <div class="p-4 bg-accent/5 rounded-lg border border-accent/20">
+                <p class="text-sm text-accent mb-2 font-medium">安全なパスワードのポイント:</p>
+                <ul class="text-sm text-dark-100 space-y-1">
+                  <li>• 12文字以上を推奨</li>
+                  <li>• 大文字、小文字、数字、記号を含める</li>
+                  <li>• 他のサービスと同じパスワードを使用しない</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12 p-6 sm:p-8 bg-dark-800 rounded-2xl border border-dark-600" aria-labelledby="step6-title">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center border border-accent/20">
+              <span class="text-accent font-bold text-xl">6</span>
+            </div>
+            <div class="flex-1">
+              <h3 id="step6-title" class="text-xl font-bold text-white mb-4">シードフレーズを安全に保存</h3>
+              <p class="text-dark-100 mb-4">12語のシードフレーズ（シークレットリカバリーフレーズ）が表示されます。これはウォレットを復元するための唯一の方法です。</p>
+              <div class="p-4 bg-red-500/10 rounded-lg border border-red-500/30 mb-4">
+                <p class="text-sm text-red-400 flex items-start gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                  </svg>
+                  <span><strong>重要:</strong> シードフレーズは絶対に他人と共有しないでください。MetaDownloadを含め、正当なサービスがシードフレーズを要求することはありません。</span>
+                </p>
+              </div>
+              <ul class="space-y-3 text-dark-100">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>紙に手書きで記録する（推奨）</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>複数の安全な場所に保管する</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>デジタルでの保存は避ける</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12 p-6 sm:p-8 bg-dark-800 rounded-2xl border border-dark-600" aria-labelledby="step7-title">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center border border-accent/20">
+              <span class="text-accent font-bold text-xl">7</span>
+            </div>
+            <div class="flex-1">
+              <h3 id="step7-title" class="text-xl font-bold text-white mb-4">シードフレーズを確認</h3>
+              <p class="text-dark-100 mb-4">シードフレーズを正しく保存したことを確認するため、MetaMask(メタマスク)はいくつかの単語を順番に入力するよう求めます。</p>
+              <p class="text-dark-100">すべての確認が完了すると、ウォレットの設定が完了し、MetaMask(メタマスク)を使用する準備が整います。</p>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12 p-6 sm:p-8 bg-gradient-to-br from-accent/10 to-dark-800 rounded-2xl border border-accent/20" aria-labelledby="complete-title">
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 bg-accent/20 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 id="complete-title" class="text-2xl font-bold text-white mb-4">セットアップ完了</h3>
+            <p class="text-dark-100 mb-6">おめでとうございます！MetaMask(メタマスク)ウォレットのセットアップが完了しました。これで暗号通貨の世界を探索する準備が整いました。</p>
+            <p class="text-sm text-dark-200">MetaDownloadは、皆様の安全な暗号通貨体験をサポートします。</p>
+          </div>
+        </section>
+        <section class="mb-12" aria-labelledby="tips-title">
+          <h2 id="tips-title" class="text-2xl sm:text-3xl font-bold text-white mb-6">セキュリティのヒント</h2>
+          <div class="grid gap-4">
+            <div class="p-5 bg-dark-800 rounded-xl border border-dark-600">
+              <h4 class="font-medium text-white mb-2">定期的なバックアップ</h4>
+              <p class="text-sm text-dark-100">シードフレーズのバックアップを定期的に確認し、安全に保管されていることを確認してください。</p>
+            </div>
+            <div class="p-5 bg-dark-800 rounded-xl border border-dark-600">
+              <h4 class="font-medium text-white mb-2">フィッシング対策</h4>
+              <p class="text-sm text-dark-100">MetaMask(メタマスク)がポップアップでシードフレーズを要求することはありません。不審なサイトには注意してください。</p>
+            </div>
+            <div class="p-5 bg-dark-800 rounded-xl border border-dark-600">
+              <h4 class="font-medium text-white mb-2">ソフトウェアの更新</h4>
+              <p class="text-sm text-dark-100">MetaMask(メタマスク)とブラウザを常に最新バージョンに保ち、セキュリティパッチを適用してください。</p>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12" aria-labelledby="conclusion-title">
+          <h2 id="conclusion-title" class="text-2xl sm:text-3xl font-bold text-white mb-6">まとめ</h2>
+          <div class="prose prose-lg text-dark-100 space-y-4">
+            <p>MetaMask(メタマスク)のダウンロードとインストールは、上記の手順に従えば簡単に完了できます。MetaDownloadでは、暗号通貨とブロックチェーン技術に関する信頼性の高い情報を提供しています。</p>
+            <p>安全なウォレット管理は、暗号通貨を扱う上で最も重要なスキルの一つです。シードフレーズの管理には特に注意を払い、安全な暗号通貨ライフをお楽しみください。</p>
+          </div>
+        </section>
+        <section class="p-6 bg-dark-800 rounded-2xl border border-dark-600" aria-label="著者情報">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 bg-dark-700 rounded-full flex items-center justify-center border border-dark-500">
+              <span class="text-white font-bold text-lg">M</span>
+            </div>
+            <div>
+              <p class="font-medium text-white">MetaDownload編集部</p>
+              <p class="text-sm text-dark-200">暗号通貨とブロックチェーン技術の専門チーム</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer class="bg-dark-800 border-t border-dark-600 py-12" role="contentinfo">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-8">
+        <a href="#" class="flex items-center" aria-label="MetaDownload ホーム">
+          <span class="text-lg font-bold text-white tracking-tight">MetaDownload</span>
+        </a>
+        <nav class="flex flex-wrap items-center justify-center gap-4 sm:gap-6" aria-label="フッターナビゲーション">
+          <button onclick="openModal('about')" class="text-sm text-dark-100 hover:text-accent transition-colors">会社概要</button>
+          <button onclick="openModal('privacy')" class="text-sm text-dark-100 hover:text-accent transition-colors">プライバシーポリシー</button>
+          <button onclick="openModal('terms')" class="text-sm text-dark-100 hover:text-accent transition-colors">利用規約</button>
+          <button onclick="openModal('cookie')" class="text-sm text-dark-100 hover:text-accent transition-colors">クッキーポリシー</button>
+          <button onclick="openModal('contact')" class="text-sm text-dark-100 hover:text-accent transition-colors">お問い合わせ</button>
+        </nav>
+      </div>
+      <div class="border-t border-dark-600 pt-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+          <p class="text-sm text-dark-200">&copy; 2025 MetaDownload. All rights reserved.</p>
+          <p class="text-xs text-dark-300">本サイトは情報提供のみを目的としています。投資アドバイスではありません。</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="modal-about" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/90" role="dialog" aria-modal="true" aria-labelledby="modal-about-title">
+    <div class="modal-content bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-lg max-h-[80vh] overflow-y-auto">
+      <div class="sticky top-0 bg-dark-800 border-b border-dark-600 p-4 flex items-center justify-between">
+        <h2 id="modal-about-title" class="text-xl font-bold text-white">会社概要</h2>
+        <button onclick="closeModal('about')" class="w-10 h-10 rounded-lg bg-dark-700 hover:bg-dark-600 flex items-center justify-center transition-colors" aria-label="閉じる">
+          <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="p-6 text-dark-100 space-y-4">
+        <p><strong class="text-white">MetaDownload</strong>は、暗号通貨とブロックチェーン技術に関する信頼性の高い情報を提供することを使命としています。</p>
+        <p>私たちのチームは、ブロックチェーン技術の専門家、セキュリティアナリスト、コンテンツクリエイターで構成されており、正確で最新の情報をお届けすることに注力しています。</p>
+        <h3 class="text-lg font-bold text-white pt-4">私たちの使命</h3>
+        <p>暗号通貨の世界は複雑で、常に変化しています。MetaDownloadは、初心者から経験豊富なユーザーまで、すべての人が安全に暗号通貨を利用できるようサポートします。</p>
+        <h3 class="text-lg font-bold text-white pt-4">価値観</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>正確性と信頼性</li>
+          <li>ユーザーセキュリティの優先</li>
+          <li>教育と啓発</li>
+          <li>透明性のある情報提供</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="modal-privacy" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/90" role="dialog" aria-modal="true" aria-labelledby="modal-privacy-title">
+    <div class="modal-content bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-lg max-h-[80vh] overflow-y-auto">
+      <div class="sticky top-0 bg-dark-800 border-b border-dark-600 p-4 flex items-center justify-between">
+        <h2 id="modal-privacy-title" class="text-xl font-bold text-white">プライバシーポリシー</h2>
+        <button onclick="closeModal('privacy')" class="w-10 h-10 rounded-lg bg-dark-700 hover:bg-dark-600 flex items-center justify-center transition-colors" aria-label="閉じる">
+          <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="p-6 text-dark-100 space-y-4">
+        <p class="text-sm text-dark-200">最終更新日: 2025年1月19日</p>
+        <h3 class="text-lg font-bold text-white pt-2">1. はじめに</h3>
+        <p>MetaDownload（以下「当社」）は、お客様のプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーでは、当社がどのように情報を収集、使用、保護するかについて説明します。</p>
+        <h3 class="text-lg font-bold text-white pt-4">2. 収集する情報</h3>
+        <p>当サイトでは、ユーザーから直接個人情報を収集することはありません。ただし、以下の技術的情報が自動的に収集される場合があります：</p>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>IPアドレス</li>
+          <li>ブラウザの種類</li>
+          <li>アクセス日時</li>
+          <li>参照元URL</li>
+        </ul>
+        <h3 class="text-lg font-bold text-white pt-4">3. 情報の使用目的</h3>
+        <p>収集した情報は、サイトの改善、セキュリティの維持、統計分析のみに使用されます。</p>
+        <h3 class="text-lg font-bold text-white pt-4">4. 第三者への開示</h3>
+        <p>法的要請がない限り、収集した情報を第三者と共有することはありません。</p>
+        <h3 class="text-lg font-bold text-white pt-4">5. お問い合わせ</h3>
+        <p>プライバシーに関するご質問は、お問い合わせページよりご連絡ください。</p>
+      </div>
+    </div>
+  </div>
+  <div id="modal-terms" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/90" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title">
+    <div class="modal-content bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-lg max-h-[80vh] overflow-y-auto">
+      <div class="sticky top-0 bg-dark-800 border-b border-dark-600 p-4 flex items-center justify-between">
+        <h2 id="modal-terms-title" class="text-xl font-bold text-white">利用規約</h2>
+        <button onclick="closeModal('terms')" class="w-10 h-10 rounded-lg bg-dark-700 hover:bg-dark-600 flex items-center justify-center transition-colors" aria-label="閉じる">
+          <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="p-6 text-dark-100 space-y-4">
+        <p class="text-sm text-dark-200">最終更新日: 2025年1月19日</p>
+        <h3 class="text-lg font-bold text-white pt-2">1. 規約への同意</h3>
+        <p>MetaDownload（以下「当サイト」）をご利用いただくことにより、本利用規約に同意したものとみなされます。</p>
+        <h3 class="text-lg font-bold text-white pt-4">2. サービスの内容</h3>
+        <p>当サイトは、暗号通貨およびブロックチェーン技術に関する情報を提供します。提供される情報は教育目的のみであり、投資アドバイスではありません。</p>
+        <h3 class="text-lg font-bold text-white pt-4">3. 免責事項</h3>
+        <p>当サイトの情報に基づいて行った投資や決定について、当社は一切の責任を負いません。暗号通貨への投資にはリスクが伴います。</p>
+        <h3 class="text-lg font-bold text-white pt-4">4. 知的財産権</h3>
+        <p>当サイトに掲載されるすべてのコンテンツは、MetaDownloadまたはそのライセンサーに帰属します。</p>
+        <h3 class="text-lg font-bold text-white pt-4">5. 禁止事項</h3>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>当サイトのコンテンツの無断複製・転載</li>
+          <li>不正アクセスまたは攻撃行為</li>
+          <li>虚偽情報の流布</li>
+        </ul>
+        <h3 class="text-lg font-bold text-white pt-4">6. 規約の変更</h3>
+        <p>当社は、必要に応じて本規約を変更する権利を有します。変更後も当サイトをご利用いただくことで、変更後の規約に同意したものとみなされます。</p>
+      </div>
+    </div>
+  </div>
+  <div id="modal-cookie" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/90" role="dialog" aria-modal="true" aria-labelledby="modal-cookie-title">
+    <div class="modal-content bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-lg max-h-[80vh] overflow-y-auto">
+      <div class="sticky top-0 bg-dark-800 border-b border-dark-600 p-4 flex items-center justify-between">
+        <h2 id="modal-cookie-title" class="text-xl font-bold text-white">クッキーポリシー</h2>
+        <button onclick="closeModal('cookie')" class="w-10 h-10 rounded-lg bg-dark-700 hover:bg-dark-600 flex items-center justify-center transition-colors" aria-label="閉じる">
+          <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="p-6 text-dark-100 space-y-4">
+        <p class="text-sm text-dark-200">最終更新日: 2025年1月19日</p>
+        <h3 class="text-lg font-bold text-white pt-2">クッキーについて</h3>
+        <p>クッキーとは、ウェブサイトがお客様のブラウザに保存する小さなテキストファイルです。</p>
+        <h3 class="text-lg font-bold text-white pt-4">当サイトでのクッキー使用</h3>
+        <p>MetaDownloadでは、以下の目的でクッキーを使用する場合があります：</p>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li><strong>必須クッキー:</strong> サイトの基本機能に必要</li>
+          <li><strong>分析クッキー:</strong> サイトの利用状況を把握するため</li>
+        </ul>
+        <h3 class="text-lg font-bold text-white pt-4">クッキーの管理</h3>
+        <p>ブラウザの設定でクッキーを無効にすることができます。ただし、一部の機能が正常に動作しなくなる場合があります。</p>
+        <h3 class="text-lg font-bold text-white pt-4">第三者のクッキー</h3>
+        <p>当サイトでは、分析や広告のために第三者のクッキーが使用される場合があります。これらのクッキーは、各第三者のプライバシーポリシーに従って管理されます。</p>
+      </div>
+    </div>
+  </div>
+  <div id="modal-contact" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/90" role="dialog" aria-modal="true" aria-labelledby="modal-contact-title">
+    <div class="modal-content bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-lg max-h-[80vh] overflow-y-auto">
+      <div class="sticky top-0 bg-dark-800 border-b border-dark-600 p-4 flex items-center justify-between">
+        <h2 id="modal-contact-title" class="text-xl font-bold text-white">お問い合わせ</h2>
+        <button onclick="closeModal('contact')" class="w-10 h-10 rounded-lg bg-dark-700 hover:bg-dark-600 flex items-center justify-center transition-colors" aria-label="閉じる">
+          <svg class="w-5 h-5 text-dark-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="p-6 text-dark-100 space-y-4">
+        <p>MetaDownloadへのお問い合わせは、以下の方法でご連絡ください。</p>
+        <div class="p-4 bg-dark-700 rounded-lg border border-dark-500">
+          <h3 class="font-medium text-white mb-2">メールでのお問い合わせ</h3>
+          <p class="text-accent">contact@metadownload.github.io</p>
+        </div>
+        <div class="p-4 bg-dark-700 rounded-lg border border-dark-500">
+          <h3 class="font-medium text-white mb-2">営業時間</h3>
+          <p>月曜日〜金曜日: 9:00〜18:00（日本時間）</p>
+          <p class="text-sm text-dark-200 mt-2">※土日祝日はお休みをいただいております</p>
+        </div>
+        <div class="p-4 bg-accent/5 rounded-lg border border-accent/20">
+          <p class="text-sm text-accent"><strong>注意:</strong> MetaDownloadは、シードフレーズや秘密鍵などの機密情報を要求することはありません。このような情報を求める連絡は詐欺の可能性があります。</p>
+        </div>
+        <p class="text-sm text-dark-200">通常、お問い合わせには2〜3営業日以内にご返信いたします。</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openModal(name) {
+      const modal = document.getElementById('modal-' + name);
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        const closeBtn = modal.querySelector('button[aria-label="閉じる"]');
+        if (closeBtn) closeBtn.focus();
+      }
+    }
+
+    function closeModal(name) {
+      const modal = document.getElementById('modal-' + name);
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.querySelectorAll('.modal-overlay').forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          const modalId = this.id.replace('modal-', '');
+          closeModal(modalId);
+        }
+      });
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.active').forEach(modal => {
+          const modalId = modal.id.replace('modal-', '');
+          closeModal(modalId);
+        });
+      }
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
